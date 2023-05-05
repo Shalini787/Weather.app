@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    font-family: "Montserrat",sans-serif;
+    background-color: #f7f7f7;
+}
+.container{
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 500px;
+    border-radius: 7px;
+    padding: 21px;
+}
+form{
+    display: flex;
+    /* for x axis -> */
+    justify-content: center;
+    /* for y axis -> */
+    align-items: center;
+    margin-bottom: 23px;
+}
+form input[type="text"]{
+    padding: 10px;
+    border: none;
+    /* when we will click on the enter city input,there will be no border -> */
+    outline: none;
+    font-size: 17px;
+    width: 70%;
+}
+form input[type="submit"]{
+    background-color: rgb(60, 60, 239);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none ;
+    transition: background-color .3s ease;
+}
+form input[type="submit"]:hover{
+    background-color: rgb(14, 3, 95);
+}
+.icon img{
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+.temperature{ 
+    font-size: 43px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.description{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.Details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Details >div{
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 11px;
+    flex: 1;
+    border-radius: 7px;
+    text-align: center;
+    min-height: 45px;
+}
+@media (max-width:700px){
+    form{
+        flex-direction: column;
+    }
+    form input[type="text"]{
+        width: 100%;
+        margin-bottom:11px ;
+    }
+}
